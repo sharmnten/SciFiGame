@@ -24,6 +24,25 @@ loadSprite("hero-run","/sprites/run.png", {
     },
 });
 
+loadSprite("hero-dash","/sprites/Smalldash.png", {
+
+    "x": 0,
+    "y": 0,
+    "width":126 ,
+    "height": 108,
+    "sliceY": 4,
+    "sliceX":1,
+    "anims": {
+        "dash": {
+            "from": 0,
+            "to": 3,
+            "speed": 3,
+            "loop": false,
+        },
+        
+},
+});
+
 
 
 
