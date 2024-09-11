@@ -1,14 +1,16 @@
 {
 	"name": "mygame",
+	"type": "module",
 	"scripts": {
-		"build": "esbuild --bundle src/main.js --outfile=www/main.js --minify",
-		"dev": "esbuild --bundle --sourcemap --keep-names src/main.js --outfile=www/main.js --servedir=www",
-		"bundle": "npm run build && mkdir -p dist && zip -r dist/game.zip www -x \"**/.DS_Store\""
+		"build": "vite build",
+		"dev": "vite",
+		"preview": "vite preview",
+		"zip": "npm run build && mkdir -p dist && zip -r dist/game.zip www -x \"**/.DS_Store\""
 	},
 	"dependencies": {
 		"kaplay": "^3001.0.0-beta.1"
 	},
 	"devDependencies": {
-		"esbuild": "^0.23.1"
+		"vite": "^5.4.3"
 	}
 }
